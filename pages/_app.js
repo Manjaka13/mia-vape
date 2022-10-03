@@ -1,4 +1,5 @@
 import "styles/global.scss";
+import "helpers/icons";
 
 /**
  * Entry point
