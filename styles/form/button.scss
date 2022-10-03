@@ -1,0 +1,17 @@
+.button {
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	background: transparent;
+	border: 1px $color-theme solid;
+	color: $color-theme;
+	transition: all 0.2s ease-out;
+
+	&:hover {
+		background: rgba(0, 0, 0, 0.5);
+	}
+
+	&:active {
+		background: $color-theme;
+	}
+}
