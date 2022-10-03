@@ -1,10 +1,11 @@
 import React, { Fragment } from "react";
 // import Navigation from "components/Navigation/Navigation";
+import CoverHome from "components/CoverHome";
 
 /**
  * Home page
  */
 
-const HomePage = () => <h1 className="test">Hello world</h1>;
+const HomePage = () => <CoverHome />;
 
 export default HomePage;
