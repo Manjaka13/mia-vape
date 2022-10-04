@@ -1,0 +1,65 @@
+/**
+ * About card component styles
+ */
+
+.about-card {
+	height: 450px;
+	background: rgb(20, 20, 20);
+	transition: all 0.4s ease-out;
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: center;
+
+	&:hover {
+		background: rgb(40, 40, 40);
+		transform: translateY(-20px);
+	}
+
+	&__title {
+		color: white;
+		text-align: center;
+		padding: 20px 0;
+	}
+
+	&__separator {
+		width: 30%;
+		height: 3px;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+
+	&__text {
+		color: rgb(180, 180, 180);
+		text-align: justify;
+		padding-bottom: 20px;
+		height: 170px;
+		overflow: hidden;
+	}
+
+	&__icon {
+		width: 100px;
+		height: 100px;
+		border-radius: 100px;
+		background: #28ffbf;
+		margin: auto;
+		box-shadow: 3px 3px 7px rgb(10, 10, 10);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 3.6em;
+		color: rgb(40, 40, 40);
+	}
+
+	&__link {
+		display: block;
+		border: 2px white solid;
+		color: white;
+		border-radius: 5px;
+		padding: 10px 20px;
+		transition: all 0.2s ease-out;
+		&:hover {
+			background: rgb(10, 10, 10);
+		}
+	}
+}
