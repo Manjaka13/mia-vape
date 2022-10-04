@@ -1,0 +1,152 @@
+/**
+ * The shop item styles
+ */
+.shop-card {
+	display: inline-block;
+	width: 350px;
+	height: 435px;
+	background: rgb(20, 20, 20);
+	margin: 20px 120px;
+	position: relative;
+	transition: all 0.2s ease-out;
+
+	&:hover {
+		background: rgb(40, 40, 40);
+	}
+
+	&__representation,
+	&__overlay,
+	&__out-stock {
+		width: 100%;
+		height: 200px;
+	}
+
+	&__representation {
+		overflow: hidden;
+		background: rgb(40, 40, 40);
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+		position: relative;
+		.image {
+			width: 100%;
+		}
+	}
+
+	&__overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__up {
+		flex: 1;
+	}
+
+	&__down {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		padding: 10px;
+		.price {
+			border-radius: 5px;
+			padding: 5px 10px;
+			font-weight: bold;
+			background: rgba(0, 0, 0, 0.8);
+			color: #28ffbf;
+		}
+		.price-original {
+			background: transparent;
+			text-decoration: line-through;
+			color: #a5a5a5;
+			text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+		}
+	}
+
+	&__out-stock {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.out-text {
+			border: 4px #e73a3a dashed;
+			color: #e73a3a;
+			border-radius: 10px;
+			padding: 10px 20px;
+			background: rgba(0, 0, 0, 0.8);
+			font-size: 2em;
+			rotate: -20deg;
+		}
+	}
+
+	&__label {
+		color: white;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+
+	&__divider {
+		width: 30%;
+		height: 3px;
+		background: #28ffbf;
+		margin: 10px 0;
+	}
+
+	&__description {
+		color: white;
+		text-align: justify;
+		color: rgb(180, 180, 180);
+		line-height: 20px;
+		font-size: 0.9em;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-line-clamp: 6;
+		-webkit-box-orient: vertical;
+	}
+
+	&__details {
+		padding: 10px;
+	}
+
+	&__link-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__link {
+		text-align: center;
+		margin-top: 10px;
+	}
+
+	&__promotion {
+		width: 70px;
+		height: 70px;
+		background: #2c2c2c;
+		color: $color-theme;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+		border-radius: 50%;
+		rotate: -20deg;
+		font-weight: bold;
+		font-size: 1.6em;
+		box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+		position: absolute;
+		top: -10px;
+		right: -10px;
+		transition: all 0.4s ease-out;
+		border: 1px $color-theme solid;
+	}
+
+	&:hover {
+		.shop-card__promotion {
+			transform: rotate3d(0, 1, 1, 360deg);
+		}
+	}
+}
