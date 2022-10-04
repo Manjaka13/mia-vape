@@ -1,0 +1,49 @@
+/**
+ * Footer styles
+ */
+.footer {
+	width: 100%;
+
+	&__separator {
+		width: 100%;
+		height: 3px;
+		background: $color-theme;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		color: #a2a2a2;
+		font-weight: bold;
+		padding: 20px 0;
+		@media only screen and (max-width: 500px) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__item {
+		@media only screen and (max-width: 500px) {
+			margin-bottom: 10px;
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.theme {
+		color: $color-theme;
+	}
+
+	.heart {
+		font-size: 1em;
+		display: inline;
+	}
+
+	.link {
+		transition: all 0.2s ease-out;
+		&:hover {
+			color: white;
+		}
+	}
+}

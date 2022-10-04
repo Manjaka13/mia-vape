@@ -2,6 +2,7 @@
  * Declare constants and export them from here
  */
 
+// List of navigation links
 export const LINK_LIST = [
 	{
 		icon: ["fas", "home"],
@@ -14,3 +15,9 @@ export const LINK_LIST = [
 		content: "Accueil",
 	},
 ];
+
+// Author infos
+export const AUTHOR = {
+	name: "Hari",
+	link: "https://harij.netlify.app",
+};
