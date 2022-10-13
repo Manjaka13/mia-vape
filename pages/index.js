@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
-// import Navigation from "components/Navigation/Navigation";
-// import CoverHome from "components/CoverHome";
+import Navigation from "components/Navigation/Navigation";
+import CoverHome from "components/CoverHome";
 import ShopCard from "components/Card/ShopCard";
 import AboutCard from "components/Card/AboutCard";
 import Footer from "components/Footer";
@@ -12,6 +12,8 @@ import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 const HomePage = () => (
 	<Fragment>
+		<Navigation />
+		<CoverHome />
 		<ShopCard />
 		<AboutCard
 			icon={faHeart}

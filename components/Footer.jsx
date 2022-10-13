@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 import { AUTHOR } from "helpers/const";
-import { faHeart } from "helpers/icons";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 /**
  * Footer component
