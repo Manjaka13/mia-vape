@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -9,11 +9,27 @@ import { useNav } from "hooks/useNav";
  * Navbar for desktop mode
  */
 
-const DesktopNav = () => {
+const DesktopNav = ({ defaultOpaque }) => {
 	const { toggle, opened } = useNav();
+	const [opaque, setOpaque] = useState(defaultOpaque || false);
+
+	useEffect(() => {
+		const scrollCallback = () => {
+			if (window.pageYOffset > 200) setOpaque(true);
+			else setOpaque(false);
+			// console.log(window.pageYOffset);
+		};
+		scrollCallback();
+		document.addEventListener("scroll", scrollCallback);
+		return () => {
+			document.removeEventListener("scroll", scrollCallback);
+		};
+	}, []);
 
 	return (
-		<div className={`desktop-nav${opened ? " desktop-nav--opened" : ""}`}>
+		<div
+			className={`desktop-nav${opened || opaque ? " desktop-nav--opaque" : ""}`}
+		>
 			<div className="content-box">
 				<div className="left">
 					<figure className="desktop-nav__logo">
