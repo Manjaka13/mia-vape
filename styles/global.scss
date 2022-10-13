@@ -1,12 +1,15 @@
 @import "styles/vars.scss";
 
-@import "styles/navigation/desktop-nav.scss";
 @import "styles/form/button.scss";
 @import "styles/form/dropdown.scss";
 @import "styles/cover-home.scss";
 @import "styles/card/shop-card.scss";
 @import "styles/card/about-card.scss";
 @import "styles/footer.scss";
+@import "styles/navigation/navigation-links.scss";
+@import "styles/navigation/desktop-nav.scss";
+@import "styles/navigation/mobile-nav.scss";
+@import "styles/navigation/navigation.scss";
 
 * {
 	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,

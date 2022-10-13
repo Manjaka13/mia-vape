@@ -1,0 +1,43 @@
+/**
+ * Styles for navigation links
+ */
+
+.navigation-links {
+	display: flex;
+	align-items: center;
+	@media only screen and (max-width: 1000px) {
+		display: none;
+	}
+	.link {
+		display: inline-block;
+		transition: all 0.2s ease-out;
+		color: white;
+		font-size: 1.2em;
+		padding: 15px 5px;
+		&:hover {
+			color: white;
+		}
+	}
+	.icon {
+		margin-right: 5px;
+	}
+	.active {
+		color: $color-theme;
+	}
+	.underline {
+		width: 0;
+		height: 5px;
+		border-radius: 2px;
+		background: $color-theme;
+		margin: auto;
+		transition: all 0.4s ease-out;
+	}
+	&__item {
+		margin-left: 15px;
+		&:hover {
+			.underline {
+				width: 100%;
+			}
+		}
+	}
+}

@@ -1,7 +1,6 @@
-import "styles/global.scss";
-// import "helpers/icons";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
+import "styles/global.scss";
 
 /**
  * Entry point
