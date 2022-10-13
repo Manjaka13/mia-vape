@@ -1,13 +1,10 @@
 /**
- * Navigation styles
+ * Desktop nav styles
  */
 
-.navigation {
-	position: fixed;
-	top: 20px;
-	z-index: 13;
+.desktop-nav {
 	width: 100%;
-	color: white;
+	padding-top: 20px;
 
 	.content-box {
 		background: rgba(255, 255, 255, 0.2);
@@ -17,6 +14,10 @@
 		align-items: center;
 		padding: 0 20px;
 		box-sizing: content-box;
+		box-shadow: 1px 1px 3px black;
+		@media only screen and (max-width: 350px) {
+			padding: 5px 10px;
+		}
 	}
 
 	.left {
@@ -25,10 +26,12 @@
 	}
 
 	&__logo {
-		width: 60px;
 		margin-right: 20px;
 		@media only screen and (max-width: 500px) {
 			margin-right: 10px;
+		}
+		@media only screen and (max-width: 350px) {
+			display: none;
 		}
 		.image {
 			width: 100%;
@@ -38,28 +41,10 @@
 	&__head {
 		.title {
 			font-size: 2.2em;
-			@media only screen and (max-width: 500px) {
-				font-size: 1.5em;
-			}
-		}
-	}
-
-	&__list {
-		display: flex;
-		align-items: center;
-		@media only screen and (max-width: 1000px) {
-			display: none;
-		}
-		.item {
-			margin-left: 20px;
-		}
-		.link {
-			transition: all 0.2s ease-out;
 			color: white;
-			font-size: 1.2em;
-		}
-		.active {
-			color: $color-theme;
+			@media only screen and (max-width: 500px) {
+				font-size: 1.9em;
+			}
 		}
 	}
 
@@ -83,10 +68,6 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-		}
-		@media only screen and (max-width: 400px) {
-			width: 35px;
-			height: 35px;
 		}
 	}
 }

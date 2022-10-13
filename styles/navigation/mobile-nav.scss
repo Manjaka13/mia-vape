@@ -1,0 +1,39 @@
+/**
+ * Styles for mobile navigation
+ */
+
+.mobile-nav {
+	width: 100%;
+
+	.content-box {
+		background: rgba(255, 255, 255, 0.2);
+		border-radius: 10px;
+		border-top: 1px #5a5a5a solid;
+		box-shadow: 1px 1px 3px black;
+	}
+
+	.navigation-links {
+		display: flex;
+		flex-direction: column;
+		&__item {
+			margin-left: 0;
+		}
+	}
+
+	&__divider {
+		width: calc(100% - 40px);
+		margin: auto;
+		height: 1px;
+		background: #5a5a5a;
+		box-shadow: 1px 1px 3px black;
+		margin-top: 20px;
+	}
+
+	&__description {
+		padding: 20px;
+		line-height: 1.6;
+		color: #939393;
+		text-align: justify;
+		text-shadow: 1px 1px 3px black;
+	}
+}

@@ -1,5 +1,9 @@
+import "@fortawesome/fontawesome-svg-core/styles.css";
 import "styles/global.scss";
-import "helpers/icons";
+import { config } from "@fortawesome/fontawesome-svg-core";
+
+// Manually add fontawesome styles
+config.autoAddCss = false;
 
 /**
  * Entry point
