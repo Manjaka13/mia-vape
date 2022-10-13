@@ -10,12 +10,14 @@
 	}
 	.link {
 		display: inline-block;
-		transition: all 0.2s ease-out;
+		transition: all 0.4s ease-out;
 		color: white;
 		font-size: 1.2em;
-		padding: 15px 5px;
+		padding: 12px 5px;
+		border-radius: 5px 5px 0 0;
 		&:hover {
 			color: white;
+			background: rgba(255, 255, 255, 0.2);
 		}
 	}
 	.icon {

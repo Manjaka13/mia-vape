@@ -17,6 +17,11 @@
 		flex-direction: column;
 		&__item {
 			margin-left: 0;
+			width: 200px;
+			.link {
+				width: 100%;
+				text-align: center;
+			}
 		}
 	}
 
@@ -26,7 +31,7 @@
 		height: 1px;
 		background: #5a5a5a;
 		box-shadow: 1px 1px 3px black;
-		margin-top: 20px;
+		margin-top: 0px;
 	}
 
 	&__description {
