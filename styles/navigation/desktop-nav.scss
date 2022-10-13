@@ -15,8 +15,15 @@
 		padding: 0 20px;
 		box-sizing: content-box;
 		box-shadow: 1px 1px 3px black;
+		transition: all 0.2s ease-out;
 		@media only screen and (max-width: 350px) {
 			padding: 5px 10px;
+		}
+	}
+
+	&--opened {
+		.content-box {
+			background: rgb(40, 40, 40);
 		}
 	}
 

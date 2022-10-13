@@ -3,7 +3,13 @@ import {
 	faDroplet,
 	faShoppingCart,
 	faBottleWater,
+	faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
+import {
+	faFacebook,
+	faInstagram,
+	faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 /**
  * Declare constants and export them from here
@@ -42,3 +48,11 @@ export const AUTHOR = {
 	name: "Hari",
 	link: "https://harij.netlify.app",
 };
+
+// Social list
+export const SOCIAL_LIST = [
+	{ icon: faFacebook, title: "Suivez notre page Facebook !", link: "#0" },
+	{ icon: faInstagram, title: "Rejoignez-nous sur Insta !", link: "#0" },
+	{ icon: faTwitter, title: "Discutons sur Twitter !", link: "#0" },
+	{ icon: faEnvelope, title: "Nous contacter par mail", link: "#0" },
+];

@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import DesktopNav from "components/Navigation/DesktopNav";
 import MobileNav from "components/Navigation/MobileNav";
+import { NavProvider } from "hooks/useNav";
 
 /**
  * Navigation bar wrapper
@@ -8,8 +9,10 @@ import MobileNav from "components/Navigation/MobileNav";
 
 const Navigation = () => (
 	<nav className="navigation">
-		<DesktopNav />
-		<MobileNav />
+		<NavProvider>
+			<DesktopNav />
+			<MobileNav />
+		</NavProvider>
 	</nav>
 );
 

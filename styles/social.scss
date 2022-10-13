@@ -1,0 +1,24 @@
+/**
+ * Social styles
+ */
+
+.social {
+	text-align: center;
+	width: 100%;
+
+	&__item {
+		display: inline-block;
+		margin-right: 30px;
+		&:last-child {
+			margin-right: 0;
+		}
+		.link {
+			transition: all 0.2s ease-out;
+			color: rgb(120, 120, 120);
+			font-size: 2.3em;
+			&:hover {
+				color: white;
+			}
+		}
+	}
+}
