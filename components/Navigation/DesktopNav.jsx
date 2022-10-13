@@ -17,7 +17,6 @@ const DesktopNav = ({ defaultOpaque }) => {
 		const scrollCallback = () => {
 			if (window.pageYOffset > 200) setOpaque(true);
 			else setOpaque(false);
-			// console.log(window.pageYOffset);
 		};
 		scrollCallback();
 		document.addEventListener("scroll", scrollCallback);

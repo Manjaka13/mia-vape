@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 import { LINK_LIST } from "helpers/const";
 import { v4 as uuidv4 } from "uuid";
@@ -9,9 +10,11 @@ import { v4 as uuidv4 } from "uuid";
 
 const mappedLinks = LINK_LIST.map((item, key) => (
 	<li className="navigation-links__item" key={uuidv4()}>
-		<a className="link active" href={item.link} title={item.title}>
-			<Icon className="icon" icon={item.icon} /> {item.content}
-		</a>
+		<Link href={item.link} passHref>
+			<a className="link active" title={item.title}>
+				<Icon className="icon" icon={item.icon} /> {item.content}
+			</a>
+		</Link>
 		<div className="underline"></div>
 	</li>
 ));
