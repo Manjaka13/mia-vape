@@ -11,6 +11,8 @@
 @import "styles/navigation/desktop-nav.scss";
 @import "styles/navigation/mobile-nav.scss";
 @import "styles/navigation/navigation.scss";
+@import "styles/section.scss";
+@import "styles/advantages-box.scss";
 
 * {
 	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -33,8 +35,14 @@ ul {
 	padding: 0;
 }
 
-body {
+html,
+body,
+#__next,
+#app {
 	width: 100%;
+}
+
+body {
 	background: rgb(10, 10, 10);
 }
 

@@ -7,10 +7,10 @@ import { NavProvider } from "hooks/useNav";
  * Navigation bar wrapper
  */
 
-const Navigation = () => (
+const Navigation = ({ navOpaque }) => (
 	<nav className="navigation">
 		<NavProvider>
-			<DesktopNav />
+			<DesktopNav navOpaque={navOpaque} />
 			<MobileNav />
 		</NavProvider>
 	</nav>

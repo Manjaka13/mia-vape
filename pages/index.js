@@ -1,34 +1,25 @@
 import React, { Fragment } from "react";
 import Navigation from "components/Navigation/Navigation";
 import CoverHome from "components/CoverHome";
-import ShopCard from "components/Card/ShopCard";
-import AboutCard from "components/Card/AboutCard";
 import Footer from "components/Footer";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import LayoutDefault from "components/Page/LayoutDefault";
+import AdvantagesBox from "components/AdvantagesBox";
 
 /**
  * Home page
  */
 
 const HomePage = () => (
-	<Fragment>
-		<Navigation />
+	<LayoutDefault
+		title="Mia Vape, professionnel du e-cigarette à Madagascar"
+		description="Achetez des cigarettes électroniques, e-liquides, bases et autre matériel DIY de la vape ici à Madagascar"
+		image="/images/homme-fumant-cigarette-electronique.jpeg"
+		navOpaque={false}
+	>
 		<CoverHome />
-		<ShopCard />
-		<AboutCard
-			icon={faHeart}
-			title="Profitez des promotions"
-			button="En profiter"
-			link="#0"
-		>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam magna dui,
-			blandit eget malesuada sit amet, dapibus bibendum nibh. Vestibulum ante ipsum
-			primis in faucibus orci luctus et ultrices posuere cubilia curae; In a quam
-			sit amet velit volutpat tristique. Donec id ligula nisl. Donec libero velit,
-			iaculis nec hendrerit sed, dapibus non turpis.
-		</AboutCard>
-		<Footer />
-	</Fragment>
+		<AdvantagesBox />
+	</LayoutDefault>
 );
 
 export default HomePage;

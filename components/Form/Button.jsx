@@ -6,7 +6,7 @@ import React from "react";
 
 const Button = ({ className, children }) => {
 	return (
-		<button className={`button${className ? " " + className : ""}`}>
+		<button className={`button${className ? " " + className : ""}`} type="submit">
 			{children}
 		</button>
 	);

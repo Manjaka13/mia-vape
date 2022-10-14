@@ -1,0 +1,15 @@
+{
+	"short_name": "Miavape",
+	"name": "Mia Vape MG",
+	"icons": [
+		{
+			"src": "/images/logo-mia-vape.webp",
+			"sizes": "100x100",
+			"type": "image/webp"
+		}
+	],
+	"start_url": ".",
+	"display": "standalone",
+	"theme_color": "#282828",
+	"background_color": "#0a0a0a"
+}

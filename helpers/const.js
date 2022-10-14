@@ -1,15 +1,21 @@
 import {
-	faHome,
-	faDroplet,
-	faShoppingCart,
-	faBottleWater,
-	faEnvelope,
-} from "@fortawesome/free-solid-svg-icons";
-import {
 	faFacebook,
 	faInstagram,
 	faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import {
+	faHome,
+	faBong,
+	faShoppingCart,
+	faBottleWater,
+	faEnvelope,
+	faPhone,
+	faMapMarker,
+	faGlobe,
+	faGift,
+	faAward,
+	faTruckFast,
+} from "@fortawesome/free-solid-svg-icons";
 
 /**
  * Declare constants and export them from here
@@ -30,7 +36,7 @@ export const LINK_LIST = [
 		link: "/e-cigarettes",
 	},
 	{
-		icon: faDroplet,
+		icon: faBong,
 		title: "Section pour les e-liquides",
 		content: "Les liquides",
 		link: "/e-liquides",
@@ -55,4 +61,40 @@ export const SOCIAL_LIST = [
 	{ icon: faInstagram, title: "Rejoignez-nous sur Insta !", link: "#0" },
 	{ icon: faTwitter, title: "Discutons sur Twitter !", link: "#0" },
 	{ icon: faEnvelope, title: "Nous contacter par mail", link: "#0" },
+];
+
+// Footer contacts
+export const CONTACT_LIST = [
+	{ icon: faPhone, content: "+261 34 67 154 30" },
+	{ icon: faEnvelope, content: "contact@mia-vape.mg" },
+	{ icon: faMapMarker, content: "Tsiazotafo, face Hôtel Nosy Be" },
+	{ icon: faGlobe, content: "Antananarivo 101" },
+];
+
+// Advantages
+export const ADVANTAGES = [
+	{
+		icon: faGift,
+		title: "Profitez de nos promotions",
+		button: "En profiter",
+		link: "#0",
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam magna dui, blandit eget malesuada sit amet, dapibus bibendum nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+	},
+	{
+		icon: faAward,
+		title: "Produits neufs de qualité",
+		button: "Aller voir",
+		link: "#0",
+		description:
+			"Proin porta iaculis purus, et congue nibh placerat eu. Mauris interdum lectus aliquet erat tincidunt suscipit ultricies eget purus. Nulla mattis orci eget iaculis pharetra. Vestibulum mattis magna non volutpat malesuada.",
+	},
+	{
+		icon: faTruckFast,
+		title: "Livraison partout à Madagascar",
+		button: "Se faire livrer",
+		link: "#0",
+		description:
+			"Etiam lacinia, nisl ac rutrum vestibulum, risus enim placerat nisl, eget bibendum neque nibh a lectus. Donec tincidunt lacinia pharetra. Proin diam arcu, gravida sit amet lobortis ut.",
+	},
 ];

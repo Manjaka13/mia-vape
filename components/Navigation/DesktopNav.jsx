@@ -9,14 +9,16 @@ import { useNav } from "hooks/useNav";
  * Navbar for desktop mode
  */
 
-const DesktopNav = ({ defaultOpaque }) => {
+const DesktopNav = ({ navOpaque }) => {
 	const { toggle, opened } = useNav();
-	const [opaque, setOpaque] = useState(defaultOpaque || false);
+	const [opaque, setOpaque] = useState(navOpaque || false);
 
 	useEffect(() => {
 		const scrollCallback = () => {
-			if (window.pageYOffset > 200) setOpaque(true);
-			else setOpaque(false);
+			if (!navOpaque) {
+				if (window.pageYOffset > 200) setOpaque(true);
+				else setOpaque(false);
+			}
 		};
 		scrollCallback();
 		document.addEventListener("scroll", scrollCallback);
