@@ -1,0 +1,84 @@
+.vape-advantages {
+	display: flex;
+	padding-top: 20px;
+
+	@media only screen and (max-width: 1000px) {
+		display: block;
+	}
+
+	&__image {
+		width: 50%;
+		height: 405px;
+		margin: 0;
+		position: relative;
+		border-radius: 10px;
+		overflow: hidden;
+		@media only screen and (max-width: 1000px) {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__list {
+		flex: 1;
+		padding-left: 20px;
+		@media only screen and (max-width: 1000px) {
+			padding-left: 0;
+		}
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		margin-bottom: 20px;
+		border-radius: 10px;
+		padding: 5px;
+		box-sizing: border-box;
+		background: transparent;
+		border-bottom: 2px transparent solid;
+		transition: all 0.4s ease-out;
+		.section__text {
+			flex: 1;
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+		.icon {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 60px;
+			height: 60px;
+			color: white;
+			font-size: 2em;
+			border-radius: 50%;
+			background: rgb(40, 40, 40);
+			margin-right: 20px;
+			transition: all 0.4s ease-in;
+			transform: rotate3d(0, 1, 0, 180deg);
+			@media only screen and (max-width: 1000px) {
+				font-size: 1.5em;
+				margin-right: 10px;
+			}
+		}
+		&--active {
+			background: rgb(40, 40, 40);
+			border-bottom: 2px $color-theme solid;
+			.section__text {
+				color: white;
+				text-shadow: 1px 1px 3px black;
+			}
+			.icon {
+				color: rgb(40, 40, 40);
+				background: $color-theme;
+				transform: rotate3d(0, 1, 0, 0);
+			}
+		}
+	}
+
+	&__title {
+		color: white;
+		font-size: 2em;
+		padding-bottom: 20px;
+	}
+}

@@ -5,6 +5,7 @@ import Footer from "components/Footer";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import LayoutDefault from "components/Page/LayoutDefault";
 import AdvantagesBox from "components/AdvantagesBox";
+import WhoAreWe from "components/WhoAreWe";
 
 /**
  * Home page
@@ -18,6 +19,7 @@ const HomePage = () => (
 		navOpaque={false}
 	>
 		<CoverHome />
+		<WhoAreWe />
 		<AdvantagesBox />
 	</LayoutDefault>
 );

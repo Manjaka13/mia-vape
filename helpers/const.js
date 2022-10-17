@@ -2,6 +2,7 @@ import {
 	faFacebook,
 	faInstagram,
 	faTwitter,
+	faRaspberryPi,
 } from "@fortawesome/free-brands-svg-icons";
 import {
 	faHome,
@@ -15,6 +16,9 @@ import {
 	faGift,
 	faAward,
 	faTruckFast,
+	faSmoking,
+	faPiggyBank,
+	faHandPointRight,
 } from "@fortawesome/free-solid-svg-icons";
 
 /**
@@ -97,4 +101,12 @@ export const ADVANTAGES = [
 		description:
 			"Etiam lacinia, nisl ac rutrum vestibulum, risus enim placerat nisl, eget bibendum neque nibh a lectus. Donec tincidunt lacinia pharetra. Proin diam arcu, gravida sit amet lobortis ut.",
 	},
+];
+
+// Advantages of vaping
+export const VAPE_ADVANTAGES = [
+	{ icon: faSmoking, content: "Jusqu'à 90% moins nocif que le tabac" },
+	{ icon: faPiggyBank, content: "De réelles économies sur le long terme" },
+	{ icon: faRaspberryPi, content: "Des parfums pour tous les goûts" },
+	{ icon: faHandPointRight, content: "Une prise en main très facile" },
 ];
