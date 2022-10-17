@@ -6,6 +6,7 @@ import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import LayoutDefault from "components/Page/LayoutDefault";
 import AdvantagesBox from "components/AdvantagesBox";
 import WhoAreWe from "components/WhoAreWe";
+import GroupBuyPresentation from "components/GroupBuyPresentation";
 
 /**
  * Home page
@@ -20,6 +21,7 @@ const HomePage = () => (
 	>
 		<CoverHome />
 		<WhoAreWe />
+		<GroupBuyPresentation />
 		<AdvantagesBox />
 	</LayoutDefault>
 );

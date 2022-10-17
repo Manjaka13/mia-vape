@@ -24,7 +24,7 @@ const mappedAdvantages = ADVANTAGES.map((item) => (
 // { icon, title, button, link, children }
 const AdvantagesBox = () => (
 	<div className="advantages-box content-box section">
-		<h2 className="section__title">Du vapotage de qualité !</h2>
+		<h2 className="section__title">Mia Vape, boutique professionnelle</h2>
 		<ul className="advantages-box__list">{mappedAdvantages}</ul>
 	</div>
 );
