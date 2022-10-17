@@ -134,6 +134,9 @@
 	display: flex;
 	box-sizing: border-box;
 	padding-top: 20px;
+	@media only screen and (max-width: 500px) {
+		flex-direction: column;
+	}
 	&__input {
 		box-sizing: border-box;
 		flex: 1;
@@ -142,8 +145,15 @@
 		background: rgb(40, 40, 40);
 		padding-left: 10px;
 		color: white;
+		@media only screen and (max-width: 500px) {
+			border-radius: 5px 5px 0 0;
+			padding: 12px 10px;
+		}
 	}
 	&__submit {
 		border-radius: 0 5px 5px 0;
+		@media only screen and (max-width: 500px) {
+			border-radius: 0 0 5px 5px;
+		}
 	}
 }
