@@ -5,5 +5,8 @@
 		color: $color-theme;
 		font-size: 2.5em;
 		padding-top: 0;
+		@media only screen and (max-width: 1000px) {
+			font-size: 2em;
+		}
 	}
 }
