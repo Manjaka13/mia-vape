@@ -1,12 +1,17 @@
 .group-buy-presentation {
 	.content-box {
-		margin-top: 40px;
-		background: rgb(40, 40, 40);
-		display: flex;
-		padding: 20px;
+		background: url(/images/smoke.jpg) center center no-repeat;
+		background-size: cover;
 		border-radius: 10px;
-		@media only screen and (max-width: 1000px) {
-			flex-direction: column;
+		overflow: hidden;
+		margin-top: 40px;
+		.content {
+			background: rgba(0, 0, 0, 0.8);
+			display: flex;
+			padding: 20px;
+			@media only screen and (max-width: 1000px) {
+				flex-direction: column;
+			}
 		}
 	}
 
