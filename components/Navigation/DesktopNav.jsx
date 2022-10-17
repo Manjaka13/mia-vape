@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import NavigationLinks from "components/Navigation/NavigationLinks";
@@ -42,11 +43,13 @@ const DesktopNav = ({ navOpaque }) => {
 							height={60}
 						/>
 					</figure>
-					<div className="desktop-nav__head">
-						<h1 className="title">
-							<span className="theme">Mia </span>Vape
-						</h1>
-					</div>
+					<Link href="/">
+						<a className="desktop-nav__head" title="Revenir à l'accueil du site">
+							<h1 className="title">
+								<span className="theme">Mia </span>Vape
+							</h1>
+						</a>
+					</Link>
 				</div>
 				<NavigationLinks />
 				<div

@@ -5,7 +5,6 @@ import {
 	faRaspberryPi,
 } from "@fortawesome/free-brands-svg-icons";
 import {
-	faHome,
 	faBong,
 	faShoppingCart,
 	faBottleWater,
@@ -19,6 +18,7 @@ import {
 	faSmoking,
 	faPiggyBank,
 	faHandPointRight,
+	faGears,
 } from "@fortawesome/free-solid-svg-icons";
 
 /**
@@ -28,22 +28,22 @@ import {
 // List of navigation links
 export const LINK_LIST = [
 	{
-		icon: faHome,
-		title: "Aller vers l'accueil du site",
-		content: "Accueil",
-		link: "/",
-	},
-	{
 		icon: faBottleWater,
 		title: "Découvrez nos cigarettes électroniques",
-		content: "Nos E-cigarettes",
+		content: "E-cigarettes",
 		link: "/e-cigarettes",
 	},
 	{
 		icon: faBong,
 		title: "Section pour les e-liquides",
-		content: "Les liquides",
+		content: "E-liquides",
 		link: "/e-liquides",
+	},
+	{
+		icon: faGears,
+		title: "Autre articles et accessoires",
+		content: "Accessoires",
+		link: "/pieces",
 	},
 	{
 		icon: faShoppingCart,
