@@ -3,7 +3,7 @@
  */
 .shop-card {
 	display: inline-block;
-	width: 350px;
+	width: 100%;
 	height: 435px;
 	background: rgb(20, 20, 20);
 	// margin: 20px 120px;
@@ -58,7 +58,7 @@
 		.price-original {
 			background: transparent;
 			text-decoration: line-through;
-			color: #a5a5a5;
+			color: white;
 			text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 		}
 	}
@@ -107,6 +107,7 @@
 		display: -webkit-box;
 		-webkit-line-clamp: 6;
 		-webkit-box-orient: vertical;
+		height: 120px;
 	}
 
 	&__details {

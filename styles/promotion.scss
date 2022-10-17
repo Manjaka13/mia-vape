@@ -1,0 +1,43 @@
+.promotion {
+	.section__title {
+		text-align: center;
+		padding-bottom: 40px;
+		@media only screen and (max-width: 1000px) {
+			padding-bottom: 20px;
+		}
+	}
+
+	&__divider {
+		width: 30%;
+		height: 5px;
+		border-radius: 3px;
+		background: $color-theme;
+		margin: auto;
+		margin-bottom: 40px;
+		box-shadow: 1px 1px 3px black;
+		@media only screen and (max-width: 1000px) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-auto-rows: auto;
+		grid-gap: 20px;
+		padding: 20px 0;
+		@media only screen and (max-width: 1050px) {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+
+	&__item {
+		@media only screen and (max-width: 1050px) {
+			max-width: 400px;
+			margin: auto;
+		}
+		@media only screen and (max-width: 800px) {
+			max-width: 100%;
+		}
+	}
+}

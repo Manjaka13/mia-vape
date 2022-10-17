@@ -6,16 +6,7 @@ import { formatPrice } from "helpers/utils";
  * Card for shop products
  */
 
-const item = {
-	name: "Kit TFV-12 Prince (Edition Grand Luxe)",
-	description:
-		"Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In a quam sit amet velit volutpat tristique. Donec id ligula nisl. Donec libero velit, iaculis nec hendrerit sed, dapibus non turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In a quam sit amet velit volutpat tristique. Donec id ligula nisl. Donec libero velit, iaculis nec hendrerit sed, dapibus non turpis.",
-	price: 390000,
-	promotion: 20,
-	outOfStock: false,
-};
-
-const ShopCard = () => {
+const ShopCard = ({ item }) => {
 	return (
 		<article className="shop-card">
 			<figure className="shop-card__representation">
@@ -23,7 +14,7 @@ const ShopCard = () => {
 					layout="fill"
 					objectFit="cover"
 					className="image"
-					src="/images/homme-fumant-cigarette-electronique.jpeg"
+					src={item.image}
 					alt="Kit TFV-12 Prince Mia Vape"
 				/>
 			</figure>
@@ -47,8 +38,8 @@ const ShopCard = () => {
 				</div>
 			</div>
 			{item.outOfStock && (
-				<div class="shop-card__out-stock">
-					<p class="out-text">Stock épuisé</p>
+				<div className="shop-card__out-stock">
+					<p className="out-text">Stock épuisé</p>
 				</div>
 			)}
 			<div className="shop-card__details">

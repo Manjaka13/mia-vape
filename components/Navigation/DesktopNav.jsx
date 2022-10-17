@@ -30,7 +30,9 @@ const DesktopNav = ({ navOpaque }) => {
 
 	return (
 		<div
-			className={`desktop-nav${opened || opaque ? " desktop-nav--opaque" : ""}`}
+			className={`desktop-nav${opened || opaque ? " desktop-nav--opaque" : ""}${
+				opened ? " desktop-nav--opened" : ""
+			}`}
 		>
 			<div className="content-box">
 				<div className="left">

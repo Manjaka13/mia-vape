@@ -17,17 +17,23 @@
 		top: -63px;
 	}
 
-	&--opened {
-		top: 0;
-		opacity: 1;
-		pointer-events: auto;
-	}
-
 	.content-box {
 		background: rgb(40, 40, 40);
 		border-radius: 10px;
 		border-top: 1px #5a5a5a solid;
 		box-shadow: 1px 1px 3px black;
+	}
+
+	&--opened {
+		top: 0;
+		opacity: 1;
+		pointer-events: auto;
+		.content-box {
+			border-radius: 0 0 10px 10px;
+		}
+	}
+
+	.content-box {
 		@media only screen and (max-width: 300px) {
 			border-radius: 0;
 			margin: 0;

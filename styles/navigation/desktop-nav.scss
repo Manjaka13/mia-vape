@@ -22,6 +22,15 @@
 		@media only screen and (max-width: 350px) {
 			padding: 5px 10px;
 		}
+	}
+
+	&--opened {
+		.content-box {
+			border-radius: 10px 10px 0 0;
+		}
+	}
+
+	.content-box {
 		@media only screen and (max-width: 300px) {
 			width: 100%;
 			box-sizing: border-box;
