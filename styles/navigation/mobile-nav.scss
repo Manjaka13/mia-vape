@@ -28,6 +28,10 @@
 		border-radius: 10px;
 		border-top: 1px #5a5a5a solid;
 		box-shadow: 1px 1px 3px black;
+		@media only screen and (max-width: 300px) {
+			border-radius: 0;
+			margin: 0;
+		}
 	}
 
 	.navigation-links {
@@ -58,9 +62,15 @@
 		color: #939393;
 		text-align: justify;
 		text-shadow: 1px 1px 3px black;
+		@media only screen and (max-height: 575px) {
+			display: none;
+		}
 	}
 
 	.social {
 		padding-bottom: 20px;
+		@media only screen and (max-height: 575px) {
+			padding-top: 20px;
+		}
 	}
 }

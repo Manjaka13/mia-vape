@@ -3,6 +3,11 @@
  */
 .footer {
 	width: 100%;
+	margin-top: 60px;
+
+	@media only screen and (max-width: 1000px) {
+		margin-top: 40px;
+	}
 
 	&__separator {
 		width: 100%;

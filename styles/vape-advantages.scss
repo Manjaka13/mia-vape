@@ -6,16 +6,27 @@
 		display: block;
 	}
 
-	&__image {
+	&__rep {
 		width: 50%;
 		height: 405px;
-		margin: 0;
-		position: relative;
 		border-radius: 10px;
 		overflow: hidden;
 		@media only screen and (max-width: 1000px) {
 			width: 100%;
 			margin-bottom: 20px;
+		}
+	}
+
+	&__image {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		position: relative;
+		transition: all 1s ease-in-out;
+		left: 0;
+		&:hover {
+			width: 120%;
+			left: -10%;
 		}
 	}
 
@@ -80,5 +91,8 @@
 		color: white;
 		font-size: 2em;
 		padding-bottom: 20px;
+		@media only screen and (max-width: 400px) {
+			font-size: 1.6em;
+		}
 	}
 }

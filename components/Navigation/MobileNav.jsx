@@ -16,11 +16,11 @@ const MobileNav = () => {
 				<NavigationLinks />
 				<div className="mobile-nav__divider"></div>
 				<p className="mobile-nav__description">
-					Suspendisse pellentesque vehicula nulla vel faucibus. Nullam hendrerit
-					augue in dapibus eleifend. Nullam aliquet luctus posuere. Morbi ornare
-					porttitor sodales. In luctus feugiat malesuada. Phasellus consectetur nec
-					ligula vitae commodo. Quisque id ligula vitae turpis blandit ullamcorper.
-					Donec faucibus euismod quam. Curabitur eros enim.
+					Mia Vape MG est une boutique de{" "}
+					<strong>vente de cigarettes électroniques</strong> de qualité partout à
+					Madagascar. Nous avons une large gamme d&apos;articles différents pouvant
+					séduire vos papilles de vapoteur. Procédez à vos achats en toute sécurité
+					sur notre site en payant avec les mobile money.
 				</p>
 				<Social />
 			</div>

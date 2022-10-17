@@ -54,7 +54,7 @@ const Footer = () => (
 				<li className="footer__item">
 					© <span className="theme">Mia</span> Vape
 				</li>
-				<li className="footer__item">Copyright 2022</li>
+				<li className="footer__item">Copyright {new Date().getFullYear()}</li>
 				<li className="footer__item">
 					<p>
 						Made with{" "}

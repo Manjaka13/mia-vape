@@ -33,14 +33,17 @@ const VapeAdvantages = () => {
 
 	return (
 		<div className="vape-advantages">
-			<figure className="vape-advantages__image">
-				<Image
-					src="/images/homme-fumant-cigarette-electronique.jpeg"
-					layout="fill"
-					alt="Représentation avantages de la vape"
-					objectFit="cover"
-				/>
-			</figure>
+			<div className="vape-advantages__rep">
+				<figure className="vape-advantages__image">
+					<Image
+						className="image"
+						src="/images/homme-fumant-cigarette-electronique.jpeg"
+						layout="fill"
+						alt="Représentation avantages de la vape"
+						objectFit="cover"
+					/>
+				</figure>
+			</div>
 			<ul className="vape-advantages__list">
 				<li className="vape-advantages__title">
 					<h3>Le vapotage c&apos;est :</h3>
