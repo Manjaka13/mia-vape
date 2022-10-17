@@ -65,11 +65,29 @@
 		height: 100%;
 		margin: 0;
 		position: relative;
-		transition: all 0.8s ease-out;
-		left: 0;
+		// transition: all 0.8s ease-out;
+		animation-name: animationImage;
+		animation-timing-function: linear;
+		animation-duration: 6s;
+		animation-direction: loop;
+		animation-iteration-count: infinite;
 		&:hover {
 			width: 130%;
 			left: -15%;
+		}
+		@keyframes animationImage {
+			0% {
+				width: 100%;
+				left: 0;
+			}
+			50% {
+				width: 130%;
+				left: -15%;
+			}
+			100% {
+				width: 100%;
+				left: 0;
+			}
 		}
 	}
 
