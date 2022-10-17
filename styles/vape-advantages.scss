@@ -6,15 +6,58 @@
 		display: block;
 	}
 
-	&__rep {
+	.cont {
 		width: 50%;
 		height: 405px;
-		border-radius: 10px;
-		overflow: hidden;
+		position: relative;
 		@media only screen and (max-width: 1000px) {
 			width: 100%;
 			margin-bottom: 20px;
 		}
+	}
+
+	&__quote {
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		background: rgba(0, 0, 0, 0.8);
+		pointer-events: none;
+		margin-right: 20px;
+		padding: 10px;
+		border-radius: 5px;
+		@media only screen and (max-width: 450px) {
+			padding: 5px;
+			margin-right: 10px;
+			bottom: 10px;
+			left: 10px;
+		}
+		.quote {
+			border-left: 3px $color-theme solid;
+			padding-left: 10px;
+			@media only screen and (max-width: 450px) {
+				font-size: 0.9em;
+			}
+			@media only screen and (max-width: 350px) {
+				border-left: none;
+				padding-left: 0;
+			}
+		}
+	}
+
+	.signature {
+		color: $color-theme;
+		font-size: 1.2em;
+		margin-top: 10px;
+		@media only screen and (max-width: 450px) {
+			font-size: 1em;
+		}
+	}
+
+	&__rep {
+		width: 100%;
+		height: 100%;
+		border-radius: 10px;
+		overflow: hidden;
 	}
 
 	&__image {
@@ -22,11 +65,11 @@
 		height: 100%;
 		margin: 0;
 		position: relative;
-		transition: all 1s ease-in-out;
+		transition: all 0.8s ease-out;
 		left: 0;
 		&:hover {
-			width: 120%;
-			left: -10%;
+			width: 130%;
+			left: -15%;
 		}
 	}
 
