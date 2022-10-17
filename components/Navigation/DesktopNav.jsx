@@ -26,7 +26,7 @@ const DesktopNav = ({ navOpaque }) => {
 		return () => {
 			document.removeEventListener("scroll", scrollCallback);
 		};
-	}, []);
+	});
 
 	return (
 		<div
